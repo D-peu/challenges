@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+
+body {
+
+}
+
+img {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+figure {
+    
+}
+
+div {
+ 
+
+}
