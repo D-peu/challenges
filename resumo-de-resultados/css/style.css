@@ -10,7 +10,10 @@
     --fundo-header: #4636F1;
     --fundo-header-claro: #6743FF;
     --fundo-rating: #432EE1;
+
 }
+
+  @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 
 header {
     background-image: linear-gradient(#6743FF, #4636F1);
@@ -20,11 +23,70 @@ header {
     border-bottom-right-radius: 2rem;
 }
 
-header h2, header p {
-    color: white;
+h1 {
+    color: whitesmoke;
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    opacity: 80%;
 }
 
-header div {
+header h2, header p {
+    color: white;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+#circulo {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    background: #432EE1;
+    background: linear-gradient(#432EE1,#4636F1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#circulo h2 {
+    font-size: 2.7rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+#circulo p {
+    font-size: 0.7rem;
+    opacity: 60%;
+    padding-top: 0.1rem;
+}
+
+#bottom-header h2 {
+    padding: 1rem;
+}
+
+#bottom-header p {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 70%;
+}
+
+h3 {
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+section div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    border: none;
+    justify-content: space-around;
+    
+}
+
+h4, p {
+    font-family: 'Hanken Grotesk', sans-serif;
 }
