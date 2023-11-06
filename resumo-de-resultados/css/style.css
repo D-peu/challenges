@@ -1,0 +1,30 @@
+:root {
+    --vermelho: #CF6D74;
+    --vermelho-claro: #FFF6F5;
+    --amarelo: #FFD684;
+    --amarelo-claro: #FFFBF2;
+    --vede: #46A489;
+    --verde-claro: #FFFBF2;
+    --azul: #3F4AA6;
+    --azul-claro: #FFFBF2;
+    --fundo-header: #4636F1;
+    --fundo-header-claro: #6743FF;
+    --fundo-rating: #432EE1;
+}
+
+header {
+    background-image: linear-gradient(#6743FF, #4636F1);
+    text-align: center;
+    padding-bottom: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+header h2, header p {
+    color: white;
+}
+
+header div {
+    border-radius: 50%;
+    background: #432EE1;
+}
