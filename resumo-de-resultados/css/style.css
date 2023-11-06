@@ -1,12 +1,12 @@
 :root {
     --vermelho: #CF6D74;
-    --vermelho-claro: #FFF6F5;
+    --vermelho-claro: #cf6d741e;
     --amarelo: #FFD684;
-    --amarelo-claro: #FFFBF2;
-    --vede: #46A489;
-    --verde-claro: #FFFBF2;
+    --amarelo-claro: #ffd6841f;
+    --verde: #46A489;
+    --verde-claro: #46a4891c;
     --azul: #3F4AA6;
-    --azul-claro: #FFFBF2;
+    --azul-claro: #3f49a61a;
     --fundo-header: #4636F1;
     --fundo-header-claro: #6743FF;
     --fundo-rating: #432EE1;
@@ -21,6 +21,7 @@ header {
     padding-bottom: 2rem;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
+    height: 20rem;
 }
 
 h1 {
@@ -78,15 +79,78 @@ h3 {
 }
 
 section div {
-    display: flex;
-    flex-direction: row;
     margin-top: 1rem;
     margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1.5rem;
+    padding-right: 0;
     border: none;
+    border-radius: 1rem;
+    display: flex;
     justify-content: space-around;
-    
+    align-items: center;
 }
 
 h4, p {
     font-family: 'Hanken Grotesk', sans-serif;
+}
+
+
+section div h4, section div p {
+    width: 40%;
+}
+
+#reaction {
+    background: var(--vermelho-claro);
+}
+
+#reaction h4 {
+    color: var(--vermelho);
+}
+
+#memory {
+    background-color: var(--amarelo-claro);
+}
+
+#memory h4 {
+    color: var(--amarelo);
+}
+
+#verbal {
+    background-color: var(--verde-claro);
+}
+
+#verbal h4 {
+    color: var(--verde);
+}
+
+#visual {
+    background-color: var(--azul-claro);
+}
+
+#visual h4 {
+    color: var(--azul);
+}
+
+section div p {
+    padding-left: 5rem;
+}
+
+button {
+    width: 92%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    background-color: #303B59;
+    color: white;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: var(--fundo-header-claro);
 }
