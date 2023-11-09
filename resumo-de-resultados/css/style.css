@@ -15,6 +15,10 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 
+body{
+ max-width: 100%;
+}
+
 header {
     background-image: linear-gradient(#6743FF, #4636F1);
     text-align: center;
@@ -70,6 +74,12 @@ header h2, header p {
     margin-left: auto;
     margin-right: auto;
     opacity: 70%;
+}
+
+main {
+    width: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 h3 {
@@ -133,7 +143,7 @@ section div h4, section div p {
 }
 
 section div p {
-    padding-left: 5rem;
+    padding-left: 3rem;
 }
 
 button {
@@ -155,7 +165,66 @@ button:hover {
     background-color: var(--fundo-header-claro);
 }
 
-
-@media screen and  {
-    
+@media screen and (max-width: 420px) {
+    body{
+        max-width: 420px;
+    }
 }
+
+
+@media screen and (min-width: 900px) {
+    
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:calc(50%);
+        width: 100%;
+        height: 100vh;
+    }
+
+    .side-by-side {
+        display: flex;
+        flex-direction: row;
+        box-shadow: 1px 1px 10px 1px #a19db8;
+        border-radius: 1rem;
+    }
+    
+    header {
+        flex: 1;
+        height: 70vh;
+        margin-top: 0px;
+        border-radius: 1rem;
+        
+    }
+
+    h1 {
+        margin-top: 10rem;
+    }
+    
+    main {
+        flex: 1;
+        height: 1vh;
+        margin-left: 1rem;
+    }
+
+    h3 {
+        margin-top: 3rem;
+    }
+
+    section div {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    button {
+        margin-bottom: 1rem;
+    }
+
+    section div p {
+        padding: 1rem;
+    }
+    
+    
+} 
+
