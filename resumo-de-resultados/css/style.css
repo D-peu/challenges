@@ -204,7 +204,7 @@ button:hover {
     
     main {
         flex: 1;
-        height: 1vh;
+        height: 100%vh;
         margin-left: 1rem;
     }
 
