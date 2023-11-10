@@ -43,8 +43,8 @@ header h2, header p {
 }
 
 #circulo {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background: linear-gradient(#432EE1,#4636F1);
     display: flex;
@@ -192,7 +192,7 @@ button:hover {
     
     header {
         flex: 1;
-        height: 70vh;
+        height: 90vh;
         margin-top: 0px;
         border-radius: 1rem;
         
@@ -204,7 +204,7 @@ button:hover {
     
     main {
         flex: 1;
-        height: 100%vh;
+        height: 100%;
         margin-left: 1rem;
     }
 
@@ -228,3 +228,12 @@ button:hover {
     
 } 
 
+@media screen and (max-height: 700px) {
+    main {
+        height: 90%;
+    }
+
+    header {
+        height: 700px;
+    }
+}
